@@ -70,7 +70,7 @@ A Go translation was produced from the Gestalt encoded Python script alone, with
 Paste `STYLE_GUIDE.md` into your AI and ask it to encode a document. No further explanation should be necessary.
 
 **Use it as a Claude skill:**
-Package `STYLE_GUIDE.md` as a skill and your AI will encode documents in Gestalt on request without needing the guide in every session.
+Package `STYLE_GUIDE.md` as a skill and your AI will encode documents in Gestalt on request without needing the guide in every session. Or you can try using the skill provided  at https://github.com/ForwardCompatible/GestaltAnalysis
 
 **Use GST_SYNTAX_SPEC.md as a reference:**
 Drop it into a project or session and ask your AI questions about the syntax. It will answer from the encoded document.
