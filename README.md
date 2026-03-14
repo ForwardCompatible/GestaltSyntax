@@ -18,6 +18,24 @@ Gestalt is not a programming language. It is not a data serialization format. It
 
 This repository contains the complete v3.2 specification, a style guide you can drop into any AI session or Claude skill, example documents, and a tests folder with reproducible experiments anyone can run with their own AI.
 
+---
+## How to use it (QRG)
+
+**Drop the style guide into any AI session:**
+Paste `STYLE_GUIDE.md` into your AI and ask it to encode a document. No further explanation should be necessary.
+
+**Use it as a Claude skill:**
+Package `STYLE_GUIDE.md` as a skill and your AI will encode documents in Gestalt on request without needing the guide in every session. Or you can try using the skill provided  at https://github.com/ForwardCompatible/GestaltAnalysis
+
+**Use GST_SYNTAX_SPEC.md as a reference:**
+Drop it into a project or session and ask your AI questions about the syntax. It will answer from the encoded document.
+
+**Run the debugging test:**
+Follow the instructions in `tests/DEBUG_RECONSTRUCTION_TEST.md` to reproduce the blind debugging experiment with your own AI. Record your results and share them.
+
+---
+
+
 **Specification and reference:**
 - `SYNTAX_SPEC.md` — the full human-readable specification
 - `GST_SYNTAX_SPEC.md` — the specification encoded in Gestalt (hand this to your AI and ask it questions)
@@ -61,22 +79,6 @@ The identification of hotspots was unprompted emergent behavior. The model was n
 **On cross-language translation:**
 
 A Go translation was produced from the Gestalt encoded Python script alone, without reference to the original source. The translation is structurally complete and idiomatically correct. Input token cost was ~1768 tokens versus ~4817 for the original Python — a 63% reduction in translation source size.
-
----
-
-## How to use it
-
-**Drop the style guide into any AI session:**
-Paste `STYLE_GUIDE.md` into your AI and ask it to encode a document. No further explanation should be necessary.
-
-**Use it as a Claude skill:**
-Package `STYLE_GUIDE.md` as a skill and your AI will encode documents in Gestalt on request without needing the guide in every session. Or you can try using the skill provided  at https://github.com/ForwardCompatible/GestaltAnalysis
-
-**Use GST_SYNTAX_SPEC.md as a reference:**
-Drop it into a project or session and ask your AI questions about the syntax. It will answer from the encoded document.
-
-**Run the debugging test:**
-Follow the instructions in `tests/DEBUG_RECONSTRUCTION_TEST.md` to reproduce the blind debugging experiment with your own AI. Record your results and share them.
 
 ---
 
