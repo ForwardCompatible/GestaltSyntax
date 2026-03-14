@@ -37,15 +37,16 @@ Follow the instructions in `tests/DEBUG_RECONSTRUCTION_TEST.md` to reproduce the
 
 
 **Specification and reference:**
+Specification/
 - `SYNTAX_SPEC.md` — the full human-readable specification
 - `GST_SYNTAX_SPEC.md` — the specification encoded in Gestalt (hand this to your AI and ask it questions)
 - `STYLE_GUIDE.md` — a minimal drop-in that teaches any AI to encode documents in Gestalt
 
 **Examples:**
+examples/
 - `CODE_EXAMPLE.md` — a Python task manager (~566 lines)
 - `GST_CODE_EXAMPLE.md` — the same script encoded in Gestalt
 - `GO_TRANSLATION_EXAMPLE.md` — a Go translation produced from the Gestalt version alone
-- `TEST_RESULTS.md` — documented token efficiency tests with methodology and scripts
 
 **Tests folder — reproduce these yourself:**
 - `tests/DEBUG_TEST.md` — a buggy Python script
@@ -57,7 +58,7 @@ Follow the instructions in `tests/DEBUG_RECONSTRUCTION_TEST.md` to reproduce the
 
 ## What do the test results suggest?
 
-All results are approximations based on character-to-token ratio estimation. The test script is included in `TEST_RESULTS.md` so you can verify and extend these findings yourself.
+All results are approximations based on character-to-token ratio estimation. Tests and their results have been included in `TEST_RESULTS.md` so you can verify and extend these findings yourself.
 
 | Content | Input tokens | Compressed tokens | Change |
 |---|---|---|---|
