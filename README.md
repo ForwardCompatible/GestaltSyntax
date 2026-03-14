@@ -71,7 +71,7 @@ The consistency across tokenizer families — particularly for code — suggests
 
 A Gestalt encoded script containing four intentional errors was provided to a fresh AI session with no system prompt, no syntax guide, and no indication that errors existed. The model identified four suspicious locations through semantic reasoning alone — unprompted — before being asked to reconstruct the script. During reconstruction it resolved all four hotspots correctly and produced cleaner code than the buggy original.
 
-The identification of hotspots was unprompted emergent behavior. This suggests Gestalt may have applications to codebase analysis beyond line-by-line reasoning — though more testing is required.
+The identification of hotspots was unprompted. This suggests Gestalt may have applications to codebase analysis beyond line-by-line reasoning — though more testing is required.
 
 **On cross-language translation:**
 
